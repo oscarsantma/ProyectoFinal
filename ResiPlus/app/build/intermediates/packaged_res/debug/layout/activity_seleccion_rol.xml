@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F8F9FA">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="&#10084;" android:textSize="34sp" android:textColor="@color/verde_andalucia_primary"
+            android:gravity="center" android:background="@drawable/bg_icon_box_light"
+            android:padding="14dp" android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ResiPlus" android:textSize="32sp" android:textStyle="bold"
+            android:textColor="#212529" android:gravity="center" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Gestiona citas entre familiares y residencia" android:textSize="14sp"
+            android:textColor="#6C757D" android:gravity="center" android:layout_marginBottom="36dp"/>
+        <LinearLayout android:id="@+id/cardFamiliar"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="@drawable/bg_card"
+            android:padding="20dp" android:layout_marginBottom="16dp"
+            android:gravity="center_vertical" android:clickable="true" android:focusable="true" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#128106;" android:textSize="36sp" android:layout_marginEnd="16dp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Familiar" android:textSize="18sp" android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Solicita citas y consulta el estado de tus visitas"
+                    android:textSize="12sp" android:textColor="#6C757D"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#8250;" android:textSize="24sp" android:textColor="#6C757D"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/cardPersonal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="@drawable/bg_card"
+            android:padding="20dp" android:gravity="center_vertical" android:layout_marginBottom="16dp"
+            android:clickable="true" android:focusable="true" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#9877;" android:textSize="36sp" android:layout_marginEnd="16dp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Personal" android:textSize="18sp" android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Aprueba familiares y organiza las citas de la residencia"
+                    android:textSize="12sp" android:textColor="#6C757D"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#8250;" android:textSize="24sp" android:textColor="#6C757D"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/cardAdmin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="@drawable/bg_card"
+            android:padding="20dp" android:gravity="center_vertical"
+            android:clickable="true" android:focusable="true" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#128274;" android:textSize="36sp" android:layout_marginEnd="16dp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Admin" android:textSize="18sp" android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Gestiona residencias, residentes y altas del personal"
+                    android:textSize="12sp" android:textColor="#6C757D"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="&#8250;" android:textSize="24sp" android:textColor="#6C757D"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

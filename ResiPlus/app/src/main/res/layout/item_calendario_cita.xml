@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvFechaCalendario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2026-04-16"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/negro_suave" />
+
+        <TextView
+            android:id="@+id/tvHoraCalendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00"
+            android:textSize="13sp"
+            android:textColor="@color/verde_andalucia_primary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFamiliaCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Familiar: Maria Garcia"
+        android:textSize="12sp"
+        android:textColor="@color/gris_texto"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/tvResidenteCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residente: Antonio Garcia Lopez"
+        android:textSize="12sp"
+        android:textColor="@color/gris_texto"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvEstadoCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PENDIENTE"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/verde_andalucia_primary"
+        android:background="@drawable/bg_badge_confirmada"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

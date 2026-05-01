@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear usuario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/blanco" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etNombreUsuarioAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Nombre y apellidos"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etEmailUsuarioAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etPasswordUsuarioAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Contrasena"
+                android:inputType="textPassword"
+                android:layout_marginBottom="12dp" />
+
+            <Spinner
+                android:id="@+id/spinnerRolAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="12dp" />
+
+            <Spinner
+                android:id="@+id/spinnerResidenciaAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutResidenteAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinnerResidenteAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_card"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCrearUsuarioAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Crear usuario"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:background="@drawable/bg_boton_verde" />
+
+            <TextView
+                android:id="@+id/btnVolverAltaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Volver"
+                android:textSize="14sp"
+                android:textColor="@color/gris_texto"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

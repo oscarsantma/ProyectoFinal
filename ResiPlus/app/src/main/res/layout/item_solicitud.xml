@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bg_card"
+    android:padding="16dp" android:layout_marginBottom="12dp" android:elevation="2dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="&#128106;" android:textSize="28sp" android:layout_marginEnd="10dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvNombreFamiliar"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Familiar" android:textSize="14sp" android:textStyle="bold"
+                android:textColor="#212529"/>
+            <TextView android:id="@+id/tvFechaHoraSolicitud"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Fecha &#183; Hora" android:textSize="12sp" android:textColor="#6C757D"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="PENDIENTE" android:textSize="9sp" android:textColor="#E67E22"
+            android:background="@drawable/bg_badge_pendiente"
+            android:paddingHorizontal="8dp" android:paddingVertical="4dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvNotaSolicitud"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="" android:textSize="12sp" android:textColor="#6C757D"
+        android:background="#F8F9FA" android:padding="8dp"
+        android:layout_marginBottom="12dp" android:visibility="gone"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnRechazar"
+            android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1"
+            android:text="Rechazar" android:textSize="13sp" android:textColor="#C0392B"
+            android:background="@drawable/bg_badge_rechazada" android:layout_marginEnd="8dp"/>
+        <Button android:id="@+id/btnConfirmar"
+            android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1"
+            android:text="Confirmar" android:textSize="13sp" android:textColor="#FFFFFF"
+            android:background="@drawable/bg_boton_verde"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTituloAltaResidente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo integrante"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/tvResidenciaAltaResidente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Residencia"
+                android:textSize="12sp"
+                android:textColor="#CCFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etNombreResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Nombre y apellidos"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etEdadResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Edad"
+                android:inputType="number"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etHabitacionResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Habitacion"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etPlantaResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Planta"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etNacimientoResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Fecha de nacimiento"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etIngresoResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Fecha de ingreso"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etObservacionesResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:hint="Observaciones"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etNecesidadesResidenteAlta"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:hint="Necesidades y cuidados"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnGuardarResidente"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Guardar integrante"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:background="@drawable/bg_boton_verde" />
+
+            <TextView
+                android:id="@+id/btnVolverAltaResidente"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Volver"
+                android:textSize="14sp"
+                android:textColor="@color/gris_texto"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

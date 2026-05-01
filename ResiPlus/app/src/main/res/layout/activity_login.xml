@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F8F9FA">
+    <LinearLayout android:id="@+id/layoutHeader"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center"
+        android:background="@color/verde_andalucia_primary" android:padding="28dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="&#10084;" android:textSize="28sp" android:textColor="#FFFFFF"
+            android:background="@drawable/bg_icon_box"
+            android:gravity="center" android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ResiPlus" android:textSize="24sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+        <TextView android:id="@+id/tvRolBadge"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="FAMILIAR" android:textSize="11sp" android:textColor="#FFFFFF"
+            android:background="#33FFFFFF" android:paddingHorizontal="12dp" android:paddingVertical="4dp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CORREO" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="#6C757D" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etEmail"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/bg_card" android:paddingHorizontal="16dp"
+                android:hint="correo@ejemplo.com" android:inputType="textEmailAddress"
+                android:textSize="14sp" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CONTRASE&#209;A" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="#6C757D" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etPassword"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/bg_card" android:paddingHorizontal="16dp"
+                android:hint="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+                android:inputType="textPassword" android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+            <Button android:id="@+id/btnLogin"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="Iniciar sesi&#243;n" android:textSize="15sp" android:textStyle="bold"
+                android:textColor="#FFFFFF" android:background="@drawable/bg_boton_verde"
+                android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/tvCrearCuenta"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Crear cuenta nueva"
+                android:textSize="13sp" android:textColor="@color/verde_andalucia_primary" android:textStyle="bold"
+                android:gravity="center" android:padding="8dp"/>
+            <TextView android:id="@+id/tvOlvidePassword"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="&#191;Has olvidado la contrase&#241;a?"
+                android:textSize="13sp" android:textColor="@color/verde_andalucia_primary" android:textStyle="bold"
+                android:gravity="center" android:padding="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/bg_card"
+                android:padding="16dp" android:layout_marginTop="24dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Credenciales de prueba" android:textSize="11sp"
+                    android:textStyle="bold" android:textColor="#6C757D" android:layout_marginBottom="6dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Familiar: familiar@test.com / 1234" android:textSize="11sp" android:textColor="#6C757D"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Personal: personal@test.com / 1234" android:textSize="11sp" android:textColor="#6C757D"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Admin: admin@test.com / 1234" android:textSize="11sp" android:textColor="#6C757D"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btnVolverLogin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center"
+                android:text="Volver"
+                android:textColor="@color/gris_texto"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

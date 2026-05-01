@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F8F9FA">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@color/verde_andalucia_primary" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Solicitar visita" android:textSize="20sp" android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvResidenteSolicitarVisita" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Antonio Garc&#237;a &#183; Hab. 100"
+            android:textSize="12sp" android:textColor="#CCFFFFFF"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1. Selecciona la fecha" android:textSize="14sp" android:textStyle="bold"
+                android:textColor="#212529" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/btnSeleccionarFecha"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="Elegir fecha en el calendario" android:textSize="14sp"
+                android:textColor="#FFFFFF" android:background="@drawable/bg_boton_verde"
+                android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvFechaSeleccionada"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="" android:textSize="14sp" android:textStyle="bold"
+                android:textColor="@color/verde_andalucia_primary" android:visibility="gone" android:layout_marginBottom="16dp"/>
+            <TextView android:id="@+id/tvHorasTitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="2. Selecciona una franja horaria" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="#212529"
+                android:layout_marginBottom="10dp" android:visibility="gone"/>
+            <LinearLayout android:id="@+id/layoutHoras"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="3. Nota para el personal (opcional)" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="#212529" android:layout_marginBottom="10dp"/>
+            <EditText android:id="@+id/etNota"
+                android:layout_width="match_parent" android:layout_height="100dp"
+                android:background="@drawable/bg_card" android:padding="14dp"
+                android:hint="Ej: Llevar&#233; fruta..." android:inputType="textMultiLine"
+                android:gravity="top" android:textSize="13sp" android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp">
+
+        <Button android:id="@+id/btnConfirmarVisita"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Confirmar solicitud" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="@drawable/bg_boton_verde"/>
+
+        <TextView
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Volver"
+            android:textSize="14sp"
+            android:textColor="@color/gris_texto"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</LinearLayout>

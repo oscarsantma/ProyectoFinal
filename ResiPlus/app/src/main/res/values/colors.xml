@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rojo_primary">#B73A3A</color>
+    <color name="rojo_dark">#8A2A2A</color>
+    <color name="rojo_light">#FBEAEA</color>
+    <color name="verde_andalucia_primary">#007A3D</color>
+    <color name="verde_andalucia_dark">#005A2D</color>
+    <color name="verde_andalucia_light">#E7F5EC</color>
+    <color name="azul_primary">#2C3E7A</color>
+    <color name="azul_light">#EAF0FB</color>
+    <color name="gris_fondo">#F8F9FA</color>
+    <color name="gris_texto">#6C757D</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro_suave">#212529</color>
+    <color name="verde_ok">#27AE60</color>
+    <color name="naranja_pendiente">#E67E22</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:background="#C0392B">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="&#10084;" android:textSize="72sp" android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="ResiPlus" android:textSize="40sp" android:textStyle="bold"
+        android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Gesti&#243;n de visitas para residencias"
+        android:textSize="14sp" android:textColor="#CCFFFFFF" android:layout_marginBottom="60dp"/>
+    <ProgressBar android:layout_width="48dp" android:layout_height="48dp"
+        android:indeterminateTint="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSaludoPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turno"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blanco" />
+
+        <TextView
+            android:id="@+id/tvResidenciaPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residencia"
+            android:textSize="13sp"
+            android:textColor="#D8FFFFFF"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tvResumenOperativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen"
+            android:textSize="12sp"
+            android:textColor="#D8FFFFFF"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="88dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card">
+
+                    <TextView
+                        android:id="@+id/tvNumPendientes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/verde_andalucia_primary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Citas pendientes"
+                        android:textSize="11sp"
+                        android:textColor="@color/gris_texto" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="88dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card">
+
+                    <TextView
+                        android:id="@+id/tvNumHoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/verde_andalucia_primary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmadas hoy"
+                        android:textSize="11sp"
+                        android:textColor="@color/gris_texto" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardRegistrosPendientesPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tvNumRegistros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Familiares pendientes de validación"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris_texto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardGestionarSolicitudes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Validar familiares y citas"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aprueba el vínculo con el residente y acepta o rechaza solicitudes de visita."
+                    android:textSize="12sp"
+                    android:textColor="@color/gris_texto"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardCalendarioCitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calendario de citas"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisa todas las citas de la residencia con su estado y horario."
+                    android:textSize="12sp"
+                    android:textColor="@color/gris_texto"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardResidentesPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listado de residentes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consulta habitaciones, necesidades y situación de cada residente."
+                    android:textSize="12sp"
+                    android:textColor="@color/gris_texto"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnVolverMenuPrincipalPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Volver al acceso"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_texto"
+                android:background="@drawable/bg_card"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvCerrarSesionPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar sesión"
+                android:textSize="13sp"
+                android:textColor="@color/gris_texto"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

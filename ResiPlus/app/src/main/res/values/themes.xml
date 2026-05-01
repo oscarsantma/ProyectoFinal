@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ResiPlus" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/rojo_primary</item>
+        <item name="colorPrimaryDark">@color/rojo_dark</item>
+        <item name="colorAccent">@color/rojo_primary</item>
+        <item name="android:windowBackground">@color/gris_fondo</item>
+    </style>
+</resources>

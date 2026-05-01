@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:background="@drawable/bg_card"
+    android:padding="16dp" android:layout_marginHorizontal="0dp" android:layout_marginBottom="10dp"
+    android:gravity="center_vertical" android:elevation="2dp">
+    <LinearLayout android:layout_width="4dp" android:layout_height="match_parent"
+        android:id="@+id/indicadorEstado" android:background="#E67E22"
+        android:layout_marginEnd="12dp"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/tvFechaVisita"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="01/06/2025" android:textSize="14sp" android:textStyle="bold"
+            android:textColor="#212529"/>
+        <TextView android:id="@+id/tvHoraVisita"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="11:00h" android:textSize="12sp" android:textColor="#6C757D"
+            android:layout_marginTop="2dp"/>
+        <TextView android:id="@+id/tvNotaVisita"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="" android:textSize="11sp" android:textColor="#6C757D"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvEstadoVisita"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="PENDIENTE" android:textSize="10sp" android:textStyle="bold"
+        android:textColor="#E67E22" android:background="@drawable/bg_badge_pendiente"
+        android:paddingHorizontal="10dp" android:paddingVertical="5dp"/>
+</LinearLayout>

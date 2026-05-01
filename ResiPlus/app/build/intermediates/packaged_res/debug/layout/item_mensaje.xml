@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="4dp">
+    <LinearLayout android:id="@+id/layoutEnviado"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="end" android:visibility="gone">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_mensaje_enviado"
+            android:padding="10dp" android:maxWidth="260dp">
+            <TextView android:id="@+id/tvTextoEnviado"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Mensaje" android:textSize="13sp" android:textColor="#FFFFFF"/>
+            <TextView android:id="@+id/tvHoraEnviado"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="12:00" android:textSize="9sp" android:textColor="#CCFFFFFF"
+                android:layout_gravity="end" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layoutRecibido"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="start" android:visibility="gone">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_mensaje_recibido"
+            android:padding="10dp" android:maxWidth="260dp">
+            <TextView android:id="@+id/tvTextoRecibido"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Mensaje" android:textSize="13sp" android:textColor="#212529"/>
+            <TextView android:id="@+id/tvHoraRecibido"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="12:00" android:textSize="9sp" android:textColor="#999999"
+                android:layout_gravity="end" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

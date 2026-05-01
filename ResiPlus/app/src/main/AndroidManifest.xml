@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ResiPlus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ResiPlus">
+        <activity android:name=".SplashActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SeleccionRolActivity"        android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"               android:screenOrientation="portrait"/>
+        <activity android:name=".DashboardFamiliarActivity"   android:screenOrientation="portrait"/>
+        <activity android:name=".DashboardPersonalActivity"   android:screenOrientation="portrait"/>
+        <activity android:name=".RegistroActivity"            android:screenOrientation="portrait"/>
+        <activity android:name=".AltaResidenteActivity"       android:screenOrientation="portrait"/>
+        <activity android:name=".AltaUsuarioActivity"         android:screenOrientation="portrait"/>
+        <activity android:name=".DashboardAdminActivity"      android:screenOrientation="portrait"/>
+        <activity android:name=".GestionResidenciasActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".SolicitarVisitaActivity"     android:screenOrientation="portrait"/>
+        <activity android:name=".MisVisitasActivity"          android:screenOrientation="portrait"/>
+        <activity android:name=".GestionarSolicitudesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarioCitasActivity"     android:screenOrientation="portrait"/>
+        <activity android:name=".ResidentesResidenciaActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

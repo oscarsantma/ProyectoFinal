@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnVolverDetalleSeccion"
+            android:layout_width="110dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_back_button"
+            android:gravity="center"
+            android:text="&#8592; Volver"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/tvIconoDetalleSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tvTituloDetalleSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvResumenDetalleSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumen"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUE MUESTRA"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:id="@+id/tvInformacionDetalleSeccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informacion"
+                    android:textColor="@color/negro_suave"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCIONES"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:id="@+id/tvAccionesDetalleSeccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acciones"
+                    android:textColor="@color/negro_suave"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERMISOS"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/verde_andalucia_primary" />
+
+                <TextView
+                    android:id="@+id/tvPermisosDetalleSeccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Permisos"
+                    android:textColor="@color/negro_suave"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

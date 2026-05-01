@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvNombreResidenciaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residencia San Francisco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/negro_suave" />
+
+    <TextView
+        android:id="@+id/tvDetalleResidenciaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 residentes activos"
+        android:textSize="12sp"
+        android:textColor="@color/gris_texto"
+        android:layout_marginTop="6dp" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvNombreRegistroPendiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario · FAMILIAR"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/negro_suave" />
+
+    <TextView
+        android:id="@+id/tvDetalleRegistroPendiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalle"
+        android:textSize="12sp"
+        android:textColor="@color/gris_texto"
+        android:layout_marginTop="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnAprobarRegistro"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Aprobar"
+            android:textStyle="bold"
+            android:textColor="@color/blanco"
+            android:background="@drawable/bg_boton_verde" />
+
+        <Button
+            android:id="@+id/btnRechazarRegistro"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="Rechazar"
+            android:textStyle="bold"
+            android:textColor="@color/blanco"
+            android:background="@drawable/bg_boton_rojo" />
+    </LinearLayout>
+</LinearLayout>

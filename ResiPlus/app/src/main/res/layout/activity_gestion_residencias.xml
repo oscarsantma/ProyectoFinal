@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residencias"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvResumenResidencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 residencias activas"
+            android:textColor="#D8FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etNombreResidencia"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_card"
+            android:paddingHorizontal="16dp"
+            android:hint="Nombre de la residencia"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnCrearResidencia"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Añadir residencia"
+            android:textStyle="bold"
+            android:textColor="@color/blanco"
+            android:background="@drawable/bg_boton_verde"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnCrearUsuarioResidencia"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Crear usuario manualmente"
+            android:textStyle="bold"
+            android:textColor="@color/verde_andalucia_primary"
+            android:background="@drawable/bg_card" />
+
+        <TextView
+            android:id="@+id/btnVolverResidencias"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center"
+            android:text="Volver"
+            android:textColor="@color/gris_texto"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResidencias"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false" />
+</LinearLayout>

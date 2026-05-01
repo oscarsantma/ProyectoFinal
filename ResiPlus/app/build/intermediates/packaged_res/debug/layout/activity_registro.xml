@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/verde_andalucia_primary"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/tvRolRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAMILIAR"
+                android:textSize="11sp"
+                android:textColor="@color/blanco"
+                android:background="#33FFFFFF"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvInfoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tu solicitud se revisará antes de activar la cuenta."
+                android:textSize="13sp"
+                android:textColor="@color/gris_texto"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE COMPLETO"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_texto"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etNombreRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="Nombre y apellidos"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORREO"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_texto"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etEmailRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:hint="correo@ejemplo.com"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTRASENA"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_texto"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etPasswordRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:hint="Minimo 4 caracteres"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESIDENCIA"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_texto"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spinnerResidencia"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutResidente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESIDENTE ASOCIADO"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:layout_marginBottom="6dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerResidente"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_card"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Enviar solicitud"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:background="@drawable/bg_boton_verde" />
+
+            <TextView
+                android:id="@+id/btnVolverRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Volver"
+                android:textSize="14sp"
+                android:textColor="@color/gris_texto"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
