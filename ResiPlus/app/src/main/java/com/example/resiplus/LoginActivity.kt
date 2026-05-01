@@ -39,39 +39,43 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            val u = db.login(email, pass)
-            if (u == null) {
-                Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-            if (u.rol != rol) {
-                Toast.makeText(this, "Este usuario no tiene rol de $rol", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-            if (u.estado != "APROBADO") {
-                val msg = if (u.estado == "RECHAZADO") {
-                    "Tu registro fue rechazado. Habla con la residencia."
-                } else {
-                    "Tu cuenta aun no ha sido aprobada por la residencia."
+            Thread {
+                val u = db.login(email, pass)
+                runOnUiThread {
+                    if (u == null) {
+                        Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
+                        return@runOnUiThread
+                    }
+                    if (u.rol != rol) {
+                        Toast.makeText(this, "Este usuario no tiene rol de $rol", Toast.LENGTH_SHORT).show()
+                        return@runOnUiThread
+                    }
+                    if (u.estado != "APROBADO") {
+                        val msg = if (u.estado == "RECHAZADO") {
+                            "Tu registro fue rechazado. Habla con la residencia."
+                        } else {
+                            "Tu cuenta aun no ha sido aprobada por la residencia."
+                        }
+                        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+                        return@runOnUiThread
+                    }
+                    getSharedPreferences("resiplus_prefs", MODE_PRIVATE).edit().apply {
+                        putInt("usuario_id", u.id)
+                        putString("usuario_nombre", u.nombre)
+                        putString("usuario_rol", u.rol)
+                        putString("usuario_residencia", u.residencia)
+                        putInt("usuario_residente_id", u.idResidente ?: -1)
+                        apply()
+                    }
+                    val destino = when (rol) {
+                        "FAMILIAR" -> DashboardFamiliarActivity::class.java
+                        "ADMIN" -> DashboardAdminActivity::class.java
+                        else -> DashboardPersonalActivity::class.java
+                    }
+                    startActivity(Intent(this, destino))
+                    finish()
                 }
-                Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
-            getSharedPreferences("resiplus_prefs", MODE_PRIVATE).edit().apply {
-                putInt("usuario_id", u.id)
-                putString("usuario_nombre", u.nombre)
-                putString("usuario_rol", u.rol)
-                putString("usuario_residencia", u.residencia)
-                putInt("usuario_residente_id", u.idResidente ?: -1)
-                apply()
-            }
-            val destino = when (rol) {
-                "FAMILIAR" -> DashboardFamiliarActivity::class.java
-                "ADMIN" -> DashboardAdminActivity::class.java
-                else -> DashboardPersonalActivity::class.java
-            }
-            startActivity(Intent(this, destino))
-            finish()
+            }.start()
         }
 
         tvRegistro.setOnClickListener {

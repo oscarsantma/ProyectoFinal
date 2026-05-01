@@ -9,7 +9,9 @@ android {
         applicationId = "com.example.resiplus"
         minSdk = 26; targetSdk = 35
         versionCode = 1; versionName = "1.0"
-        buildConfigField("String", "API_BASE_URL", "\"https://tu-dominio.com/resiplus/api/index.php\"")
+        // 10.0.2.2 = localhost del PC cuando usas el emulador de Android Studio
+        // Si usas movil fisico: cambia por la IP local de tu PC (ej: 192.168.1.X)
+        buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2/resiplus/api/index.php\"")
     }
     buildTypes { release { isMinifyEnabled = false } }
     buildFeatures { buildConfig = true }
