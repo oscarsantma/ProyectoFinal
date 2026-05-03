@@ -4,13 +4,13 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$host   = "localhost";
-$dbname = "resiplus";
-$dbuser = "root";
-$dbpass = "";
+$host   = "fdb1031.runhosting.com";
+$dbname = "4754766_resiplus";
+$dbuser = "4754766_resiplus";
+$dbpass = "oscarsantma2001";
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $dbuser, $dbpass);
+    $pdo = new PDO("mysql:host=$host;port=3306;dbname=$dbname;charset=utf8", $dbuser, $dbpass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     responder(false, ["error" => "Error de conexion con la base de datos"]);

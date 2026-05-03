@@ -1,35 +1,35 @@
-com.example.resiplus.app-core-1.13.1-0 C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\res
-com.example.resiplus.app-fragment-1.5.4-1 C:\Users\OscarSa\.gradle\caches\transforms-3\05d9e5c7014c1aaa8e8ee95c3301f2f7\transformed\fragment-1.5.4\res
-com.example.resiplus.app-annotation-experimental-1.4.0-2 C:\Users\OscarSa\.gradle\caches\transforms-3\081df750d821704473137f1dd7408ae2\transformed\annotation-experimental-1.4.0\res
-com.example.resiplus.app-transition-1.5.0-3 C:\Users\OscarSa\.gradle\caches\transforms-3\1c333eee9788788ff0bf6d30ad85e738\transformed\transition-1.5.0\res
-com.example.resiplus.app-profileinstaller-1.3.1-4 C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\res
-com.example.resiplus.app-cardview-1.0.0-5 C:\Users\OscarSa\.gradle\caches\transforms-3\2c2fe8f55e0e8f1d9a10d03aa59da03b\transformed\cardview-1.0.0\res
-com.example.resiplus.app-recyclerview-1.3.2-6 C:\Users\OscarSa\.gradle\caches\transforms-3\2e4ebcea87a48be3cda2faf0f96882ea\transformed\recyclerview-1.3.2\res
-com.example.resiplus.app-viewpager2-1.1.0-beta02-7 C:\Users\OscarSa\.gradle\caches\transforms-3\2feeefb003763dc3b98f1b655c715e19\transformed\viewpager2-1.1.0-beta02\res
-com.example.resiplus.app-appcompat-resources-1.7.0-8 C:\Users\OscarSa\.gradle\caches\transforms-3\36900f7930669b787c50bcd49aa8ea77\transformed\appcompat-resources-1.7.0\res
-com.example.resiplus.app-constraintlayout-2.1.4-9 C:\Users\OscarSa\.gradle\caches\transforms-3\406bc65fa802a1d69336d6b6548fee8e\transformed\constraintlayout-2.1.4\res
-com.example.resiplus.app-drawerlayout-1.1.1-10 C:\Users\OscarSa\.gradle\caches\transforms-3\40c26eea81ec0be3694464eb7e19ffd3\transformed\drawerlayout-1.1.1\res
-com.example.resiplus.app-lifecycle-viewmodel-savedstate-2.6.2-11 C:\Users\OscarSa\.gradle\caches\transforms-3\421038d761e1edfcbbbd864aa17aac04\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
-com.example.resiplus.app-activity-1.8.0-12 C:\Users\OscarSa\.gradle\caches\transforms-3\425c1408fca43489468dd8bb34ef20ab\transformed\activity-1.8.0\res
-com.example.resiplus.app-lifecycle-viewmodel-2.6.2-13 C:\Users\OscarSa\.gradle\caches\transforms-3\451352625ea235309e2d7dec01fdb516\transformed\lifecycle-viewmodel-2.6.2\res
-com.example.resiplus.app-customview-poolingcontainer-1.0.0-14 C:\Users\OscarSa\.gradle\caches\transforms-3\47fdb18229cb89f16a53a04ec290af45\transformed\customview-poolingcontainer-1.0.0\res
-com.example.resiplus.app-core-ktx-1.13.1-15 C:\Users\OscarSa\.gradle\caches\transforms-3\6555072f7ad51e2942a468b5c7e0bd2e\transformed\core-ktx-1.13.1\res
-com.example.resiplus.app-coordinatorlayout-1.1.0-16 C:\Users\OscarSa\.gradle\caches\transforms-3\840420cb41664cbef4c2c7db7a12e43d\transformed\coordinatorlayout-1.1.0\res
-com.example.resiplus.app-lifecycle-runtime-2.6.2-17 C:\Users\OscarSa\.gradle\caches\transforms-3\a43bdf466eac5fd21483b49bbd87f7cc\transformed\lifecycle-runtime-2.6.2\res
-com.example.resiplus.app-lifecycle-livedata-2.6.2-18 C:\Users\OscarSa\.gradle\caches\transforms-3\ac738179031b1477aed165bd35059896\transformed\lifecycle-livedata-2.6.2\res
-com.example.resiplus.app-lifecycle-livedata-core-2.6.2-19 C:\Users\OscarSa\.gradle\caches\transforms-3\b515f48bf04f734280db06df3417812c\transformed\lifecycle-livedata-core-2.6.2\res
-com.example.resiplus.app-savedstate-1.2.1-20 C:\Users\OscarSa\.gradle\caches\transforms-3\beb249d9f47c7f69af28afe5dbb58a31\transformed\savedstate-1.2.1\res
-com.example.resiplus.app-lifecycle-process-2.6.2-21 C:\Users\OscarSa\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\res
-com.example.resiplus.app-core-runtime-2.2.0-22 C:\Users\OscarSa\.gradle\caches\transforms-3\d63d3d79b5c4cf4060af25d5368f7228\transformed\core-runtime-2.2.0\res
-com.example.resiplus.app-emoji2-1.3.0-23 C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\res
-com.example.resiplus.app-startup-runtime-1.1.1-24 C:\Users\OscarSa\.gradle\caches\transforms-3\e70e82b80ce850ed593b8c05dc9773d9\transformed\startup-runtime-1.1.1\res
-com.example.resiplus.app-emoji2-views-helper-1.3.0-25 C:\Users\OscarSa\.gradle\caches\transforms-3\ea0a71c62952d8a38957b7fee1cb5ff4\transformed\emoji2-views-helper-1.3.0\res
-com.example.resiplus.app-material-1.12.0-26 C:\Users\OscarSa\.gradle\caches\transforms-3\f365540ee804ae47f505c3306333fcf9\transformed\material-1.12.0\res
-com.example.resiplus.app-appcompat-1.7.0-27 C:\Users\OscarSa\.gradle\caches\transforms-3\ff9ef818029d8faf022ee3c5ccec4d4f\transformed\appcompat-1.7.0\res
-com.example.resiplus.app-pngs-28 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\build\generated\res\pngs\debug
-com.example.resiplus.app-resValues-29 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\build\generated\res\resValues\debug
-com.example.resiplus.app-packageDebugResources-30 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.resiplus.app-packageDebugResources-31 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.resiplus.app-merged_res-32 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\build\intermediates\merged_res\debug
-com.example.resiplus.app-debug-33 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\src\debug\res
-com.example.resiplus.app-main-34 C:\Users\OscarSa\Downloads\ResiPlus_Completa\ResiPlus\app\src\main\res
+com.example.resiplus.app-core-1.13.1-0 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\res
+com.example.resiplus.app-fragment-1.5.4-1 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\05d9e5c7014c1aaa8e8ee95c3301f2f7\transformed\fragment-1.5.4\res
+com.example.resiplus.app-annotation-experimental-1.4.0-2 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\081df750d821704473137f1dd7408ae2\transformed\annotation-experimental-1.4.0\res
+com.example.resiplus.app-transition-1.5.0-3 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\1c333eee9788788ff0bf6d30ad85e738\transformed\transition-1.5.0\res
+com.example.resiplus.app-profileinstaller-1.3.1-4 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\res
+com.example.resiplus.app-cardview-1.0.0-5 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\2c2fe8f55e0e8f1d9a10d03aa59da03b\transformed\cardview-1.0.0\res
+com.example.resiplus.app-recyclerview-1.3.2-6 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\2e4ebcea87a48be3cda2faf0f96882ea\transformed\recyclerview-1.3.2\res
+com.example.resiplus.app-viewpager2-1.1.0-beta02-7 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\2feeefb003763dc3b98f1b655c715e19\transformed\viewpager2-1.1.0-beta02\res
+com.example.resiplus.app-appcompat-resources-1.7.0-8 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\36900f7930669b787c50bcd49aa8ea77\transformed\appcompat-resources-1.7.0\res
+com.example.resiplus.app-constraintlayout-2.1.4-9 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\406bc65fa802a1d69336d6b6548fee8e\transformed\constraintlayout-2.1.4\res
+com.example.resiplus.app-drawerlayout-1.1.1-10 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\40c26eea81ec0be3694464eb7e19ffd3\transformed\drawerlayout-1.1.1\res
+com.example.resiplus.app-lifecycle-viewmodel-savedstate-2.6.2-11 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\421038d761e1edfcbbbd864aa17aac04\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.resiplus.app-activity-1.8.0-12 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\425c1408fca43489468dd8bb34ef20ab\transformed\activity-1.8.0\res
+com.example.resiplus.app-lifecycle-viewmodel-2.6.2-13 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\451352625ea235309e2d7dec01fdb516\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.resiplus.app-customview-poolingcontainer-1.0.0-14 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\47fdb18229cb89f16a53a04ec290af45\transformed\customview-poolingcontainer-1.0.0\res
+com.example.resiplus.app-core-ktx-1.13.1-15 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\6555072f7ad51e2942a468b5c7e0bd2e\transformed\core-ktx-1.13.1\res
+com.example.resiplus.app-coordinatorlayout-1.1.0-16 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\840420cb41664cbef4c2c7db7a12e43d\transformed\coordinatorlayout-1.1.0\res
+com.example.resiplus.app-lifecycle-runtime-2.6.2-17 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\a43bdf466eac5fd21483b49bbd87f7cc\transformed\lifecycle-runtime-2.6.2\res
+com.example.resiplus.app-lifecycle-livedata-2.6.2-18 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\ac738179031b1477aed165bd35059896\transformed\lifecycle-livedata-2.6.2\res
+com.example.resiplus.app-lifecycle-livedata-core-2.6.2-19 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\b515f48bf04f734280db06df3417812c\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.resiplus.app-savedstate-1.2.1-20 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\beb249d9f47c7f69af28afe5dbb58a31\transformed\savedstate-1.2.1\res
+com.example.resiplus.app-lifecycle-process-2.6.2-21 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\res
+com.example.resiplus.app-core-runtime-2.2.0-22 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\d63d3d79b5c4cf4060af25d5368f7228\transformed\core-runtime-2.2.0\res
+com.example.resiplus.app-emoji2-1.3.0-23 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\res
+com.example.resiplus.app-startup-runtime-1.1.1-24 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e70e82b80ce850ed593b8c05dc9773d9\transformed\startup-runtime-1.1.1\res
+com.example.resiplus.app-emoji2-views-helper-1.3.0-25 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\ea0a71c62952d8a38957b7fee1cb5ff4\transformed\emoji2-views-helper-1.3.0\res
+com.example.resiplus.app-material-1.12.0-26 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\f365540ee804ae47f505c3306333fcf9\transformed\material-1.12.0\res
+com.example.resiplus.app-appcompat-1.7.0-27 C:\Users\oscar santiago masso\.gradle\caches\transforms-3\ff9ef818029d8faf022ee3c5ccec4d4f\transformed\appcompat-1.7.0\res
+com.example.resiplus.app-pngs-28 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\build\generated\res\pngs\debug
+com.example.resiplus.app-resValues-29 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\build\generated\res\resValues\debug
+com.example.resiplus.app-packageDebugResources-30 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.resiplus.app-packageDebugResources-31 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.resiplus.app-merged_res-32 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\build\intermediates\merged_res\debug
+com.example.resiplus.app-debug-33 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\debug\res
+com.example.resiplus.app-main-34 C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\res
