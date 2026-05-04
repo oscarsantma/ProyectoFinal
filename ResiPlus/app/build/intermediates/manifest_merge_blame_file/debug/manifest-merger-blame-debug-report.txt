@@ -9,208 +9,208 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:3:5-67
-11-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:3:22-64
+11-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:3:5-67
+11-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:3:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 14        android:name="com.example.resiplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.example.resiplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:4:5-32:19
+19-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:4:5-32:19
 20        android:allowBackup="true"
-20-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:5:9-35
+20-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:5:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.13.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.13.1] C:\Users\OscarSa\.gradle\caches\transforms-3\0063e0af06dfaba62a9d0d966967a45e\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 22        android:debuggable="true"
 23        android:extractNativeLibs="false"
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:6:9-43
+24-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:6:9-43
 25        android:label="ResiPlus"
-25-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:7:9-33
+25-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:7:9-33
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:8:9-54
+26-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:8:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:9:9-35
+27-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:9:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.ResiPlus"
-29-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:11:9-46
+29-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:11:9-46
 30        android:usesCleartextTraffic="true" >
-30-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:10:9-44
+30-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:10:9-44
 31        <activity
-31-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:9-17:20
+31-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:9-17:20
 32            android:name="com.example.resiplus.SplashActivity"
-32-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:19-49
+32-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:19-49
 33            android:exported="true"
-33-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:50-73
+33-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:50-73
 34            android:screenOrientation="portrait" >
-34-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:74-110
+34-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:12:74-110
 35            <intent-filter>
-35-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:13:13-16:29
+35-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:13:13-16:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:14:17-68
-36-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:14:25-66
+36-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:14:17-68
+36-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:14:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:15:17-76
-38-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:15:27-74
+38-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:15:17-76
+38-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:15:27-74
 39            </intent-filter>
 40        </activity>
 41        <activity
-41-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:9-101
+41-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:9-101
 42            android:name="com.example.resiplus.SeleccionRolActivity"
-42-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:19-55
+42-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:19-55
 43            android:screenOrientation="portrait" />
-43-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:63-99
+43-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:18:63-99
 44        <activity
-44-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:9-101
+44-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:9-101
 45            android:name="com.example.resiplus.LoginActivity"
-45-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:19-48
+45-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:19-48
 46            android:screenOrientation="portrait" />
-46-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:63-99
+46-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:19:63-99
 47        <activity
-47-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:9-101
+47-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:9-101
 48            android:name="com.example.resiplus.DashboardFamiliarActivity"
-48-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:19-60
+48-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:19-60
 49            android:screenOrientation="portrait" />
-49-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:63-99
+49-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:20:63-99
 50        <activity
-50-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:9-101
+50-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:9-101
 51            android:name="com.example.resiplus.DashboardPersonalActivity"
-51-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:19-60
+51-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:19-60
 52            android:screenOrientation="portrait" />
-52-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:63-99
+52-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:21:63-99
 53        <activity
-53-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:9-101
+53-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:9-101
 54            android:name="com.example.resiplus.RegistroActivity"
-54-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:19-51
+54-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:19-51
 55            android:screenOrientation="portrait" />
-55-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:63-99
+55-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:22:63-99
 56        <activity
-56-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:9-101
+56-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:9-101
 57            android:name="com.example.resiplus.AltaResidenteActivity"
-57-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:19-56
+57-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:19-56
 58            android:screenOrientation="portrait" />
-58-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:63-99
+58-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:23:63-99
 59        <activity
-59-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:9-101
+59-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:9-101
 60            android:name="com.example.resiplus.AltaUsuarioActivity"
-60-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:19-54
+60-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:19-54
 61            android:screenOrientation="portrait" />
-61-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:63-99
+61-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:24:63-99
 62        <activity
-62-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:9-101
+62-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:9-101
 63            android:name="com.example.resiplus.DashboardAdminActivity"
-63-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:19-57
+63-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:19-57
 64            android:screenOrientation="portrait" />
-64-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:63-99
+64-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:25:63-99
 65        <activity
-65-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:9-101
+65-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:9-101
 66            android:name="com.example.resiplus.GestionResidenciasActivity"
-66-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:19-61
+66-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:19-61
 67            android:screenOrientation="portrait" />
-67-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:63-99
+67-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:26:63-99
 68        <activity
-68-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:9-101
+68-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:9-101
 69            android:name="com.example.resiplus.SolicitarVisitaActivity"
-69-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:19-58
+69-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:19-58
 70            android:screenOrientation="portrait" />
-70-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:63-99
+70-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:27:63-99
 71        <activity
-71-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:9-101
+71-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:9-101
 72            android:name="com.example.resiplus.MisVisitasActivity"
-72-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:19-53
+72-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:19-53
 73            android:screenOrientation="portrait" />
-73-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:63-99
+73-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:28:63-99
 74        <activity
-74-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:9-102
+74-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:9-102
 75            android:name="com.example.resiplus.GestionarSolicitudesActivity"
-75-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:19-63
+75-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:19-63
 76            android:screenOrientation="portrait" />
-76-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:64-100
+76-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:29:64-100
 77        <activity
-77-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:9-101
+77-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:9-101
 78            android:name="com.example.resiplus.CalendarioCitasActivity"
-78-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:19-58
+78-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:19-58
 79            android:screenOrientation="portrait" />
-79-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:63-99
+79-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:30:63-99
 80        <activity
-80-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:9-102
+80-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:9-102
 81            android:name="com.example.resiplus.ResidentesResidenciaActivity"
-81-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:19-63
+81-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:19-63
 82            android:screenOrientation="portrait" />
-82-->C:\Users\oscar santiago masso\Documents\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:64-100
+82-->C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\src\main\AndroidManifest.xml:31:64-100
 83
 84        <provider
-84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 85            android:name="androidx.startup.InitializationProvider"
-85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 86            android:authorities="com.example.resiplus.androidx-startup"
-86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 87            android:exported="false" >
-87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 88            <meta-data
-88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 89                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 90                android:value="androidx.startup" />
-90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\OscarSa\.gradle\caches\transforms-3\e678cda94e0aa5c80c08ca609b4550e6\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 91            <meta-data
-91-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+91-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\OscarSa\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-92-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+92-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\OscarSa\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 93                android:value="androidx.startup" />
-93-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+93-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\OscarSa\.gradle\caches\transforms-3\d4805f83d8f9b3ea5132fcebbf3feabf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 94            <meta-data
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 95                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 96                android:value="androidx.startup" />
-96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 97        </provider>
 98
 99        <receiver
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 101            android:directBootAware="false"
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 102            android:enabled="true"
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 103            android:exported="true"
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 104            android:permission="android.permission.DUMP" >
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 105            <intent-filter>
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 107            </intent-filter>
 108            <intent-filter>
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 110            </intent-filter>
 111            <intent-filter>
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 113            </intent-filter>
 114            <intent-filter>
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oscar santiago masso\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OscarSa\.gradle\caches\transforms-3\23271b9e1b2932fb1de3ec70003ea7a2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 116            </intent-filter>
 117        </receiver>
 118    </application>

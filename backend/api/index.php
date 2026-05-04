@@ -4,6 +4,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
+// datos de conexion a la base de datos
 $host   = "fdb1031.runhosting.com";
 $dbname = "4754766_resiplus";
 $dbuser = "4754766_resiplus";
@@ -25,41 +26,43 @@ if (!$body || !isset($body["action"])) {
 
 $action = $body["action"];
 
+// enrutamos segun la accion recibida
 switch ($action) {
-    case "login":                           login($pdo, $body); break;
-    case "registrar_usuario":               registrarUsuario($pdo, $body); break;
-    case "listar_residencias":              listarResidencias($pdo); break;
-    case "crear_residencia":                crearResidencia($pdo, $body); break;
-    case "listar_residentes":               listarResidentes($pdo, $body); break;
-    case "obtener_residente":               obtenerResidente($pdo, $body); break;
-    case "obtener_residente_vinculado":     obtenerResidenteVinculado($pdo, $body); break;
-    case "obtener_usuario":                 obtenerUsuario($pdo, $body); break;
-    case "listar_solicitudes_admin":        listarSolicitudesAdmin($pdo); break;
-    case "listar_solicitudes_familiares":   listarSolicitudesFamiliares($pdo, $body); break;
-    case "actualizar_estado_usuario":       actualizarEstadoUsuario($pdo, $body); break;
-    case "crear_usuario_admin":             crearUsuarioAdmin($pdo, $body); break;
-    case "guardar_residente":               guardarResidente($pdo, $body); break;
-    case "actualizar_estado_residente":     actualizarEstadoResidente($pdo, $body); break;
-    case "crear_visita":                    crearVisita($pdo, $body); break;
-    case "listar_visitas_familiar":         listarVisitasFamiliar($pdo, $body); break;
-    case "listar_visitas_pendientes":       listarVisitasPendientes($pdo, $body); break;
-    case "listar_visitas_residencia":       listarVisitasResidencia($pdo, $body); break;
-    case "actualizar_estado_visita":        actualizarEstadoVisita($pdo, $body); break;
-    case "listar_horas_ocupadas":           listarHorasOcupadas($pdo, $body); break;
-    case "resumen_personal":                resumenPersonal($pdo, $body); break;
-    case "resumen_admin":                   resumenAdmin($pdo); break;
-    case "contar_residentes_residencia":    contarResidentesResidencia($pdo, $body); break;
-    case "insertar_mensaje":                insertarMensaje($pdo, $body); break;
-    case "listar_mensajes":                 listarMensajes($pdo, $body); break;
+    case "login": login($pdo, $body); break;
+    case "registrar_usuario": registrarUsuario($pdo, $body); break;
+    case "listar_residencias": listarResidencias($pdo); break;
+    case "crear_residencia": crearResidencia($pdo, $body); break;
+    case "listar_residentes": listarResidentes($pdo, $body); break;
+    case "obtener_residente": obtenerResidente($pdo, $body); break;
+    case "obtener_residente_vinculado": obtenerResidenteVinculado($pdo, $body); break;
+    case "obtener_usuario": obtenerUsuario($pdo, $body); break;
+    case "listar_solicitudes_admin": listarSolicitudesAdmin($pdo); break;
+    case "listar_solicitudes_familiares": listarSolicitudesFamiliares($pdo, $body); break;
+    case "actualizar_estado_usuario": actualizarEstadoUsuario($pdo, $body); break;
+    case "crear_usuario_admin": crearUsuarioAdmin($pdo, $body); break;
+    case "guardar_residente": guardarResidente($pdo, $body); break;
+    case "actualizar_estado_residente": actualizarEstadoResidente($pdo, $body); break;
+    case "crear_visita": crearVisita($pdo, $body); break;
+    case "listar_visitas_familiar": listarVisitasFamiliar($pdo, $body); break;
+    case "listar_visitas_pendientes": listarVisitasPendientes($pdo, $body); break;
+    case "listar_visitas_residencia": listarVisitasResidencia($pdo, $body); break;
+    case "actualizar_estado_visita": actualizarEstadoVisita($pdo, $body); break;
+    case "listar_horas_ocupadas": listarHorasOcupadas($pdo, $body); break;
+    case "resumen_personal": resumenPersonal($pdo, $body); break;
+    case "resumen_admin": resumenAdmin($pdo); break;
+    case "contar_residentes_residencia": contarResidentesResidencia($pdo, $body); break;
+    case "insertar_mensaje": insertarMensaje($pdo, $body); break;
+    case "listar_mensajes": listarMensajes($pdo, $body); break;
     default:
         responder(false, ["error" => "Accion desconocida: $action"]);
 }
 
 function responder($ok, $data = []) {
-    echo json_encode(["ok" => $ok, "data" => $data], JSON_UNESCAPED_UNICODE);
+    $res = ["ok" => $ok, "data" => $data];
+    echo json_encode($res, JSON_UNESCAPED_UNICODE);
 }
 
-// ─── USUARIOS ────────────────────────────────────────────────────────────────
+// --- usuarios ---
 
 function login($pdo, $data) {
     $email = $data["email"] ?? "";
@@ -77,13 +80,14 @@ function login($pdo, $data) {
 }
 
 function registrarUsuario($pdo, $data) {
-    $nombre     = $data["nombre"] ?? "";
-    $email      = $data["email"] ?? "";
-    $password   = $data["password"] ?? "";
-    $rol        = $data["rol"] ?? "";
-    $residencia = $data["residencia"] ?? "";
-    $idRes      = $data["id_residente"] ?? null;
+    $nombre = $data["nombre"] ?? "";
+    $email  = $data["email"] ?? "";
+    $pass   = $data["password"] ?? "";
+    $rol    = $data["rol"] ?? "";
+    $res    = $data["residencia"] ?? "";
+    $idRes  = $data["id_residente"] ?? null;
 
+    // comprobar si ya existe ese email
     $check = $pdo->prepare("SELECT id FROM usuarios WHERE email = ?");
     $check->execute([$email]);
     if ($check->fetch()) {
@@ -93,7 +97,7 @@ function registrarUsuario($pdo, $data) {
 
     $estado = ($rol === "ADMIN") ? "APROBADO" : "PENDIENTE";
     $stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email, password, rol, residencia, estado, id_residente) VALUES (?,?,?,?,?,?,?)");
-    $stmt->execute([$nombre, $email, $password, $rol, $residencia, $estado, $idRes]);
+    $stmt->execute([$nombre, $email, $pass, $rol, $res, $estado, $idRes]);
     responder(true, ["id" => (int)$pdo->lastInsertId()]);
 }
 
@@ -102,7 +106,10 @@ function obtenerUsuario($pdo, $data) {
     $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id = ?");
     $stmt->execute([$id]);
     $u = $stmt->fetch(PDO::FETCH_ASSOC);
-    if (!$u) { responder(false, ["error" => "Usuario no encontrado"]); return; }
+    if (!$u) {
+        responder(false, ["error" => "Usuario no encontrado"]);
+        return;
+    }
     responder(true, ["usuario" => $u]);
 }
 
@@ -112,9 +119,9 @@ function listarSolicitudesAdmin($pdo) {
 }
 
 function listarSolicitudesFamiliares($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
+    $res = $data["residencia"] ?? "";
     $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE rol = 'FAMILIAR' AND estado = 'PENDIENTE' AND residencia = ? ORDER BY id DESC");
-    $stmt->execute([$residencia]);
+    $stmt->execute([$res]);
     responder(true, ["usuarios" => $stmt->fetchAll(PDO::FETCH_ASSOC)]);
 }
 
@@ -127,19 +134,19 @@ function actualizarEstadoUsuario($pdo, $data) {
 }
 
 function crearUsuarioAdmin($pdo, $data) {
-    $nombre     = $data["nombre"] ?? "";
-    $email      = $data["email"] ?? "";
-    $password   = $data["password"] ?? "";
-    $rol        = $data["rol"] ?? "";
-    $residencia = $data["residencia"] ?? "";
-    $idRes      = $data["id_residente"] ?? null;
+    $nombre = $data["nombre"] ?? "";
+    $email  = $data["email"] ?? "";
+    $pass   = $data["password"] ?? "";
+    $rol    = $data["rol"] ?? "";
+    $res    = $data["residencia"] ?? "";
+    $idRes  = $data["id_residente"] ?? null;
 
     $stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email, password, rol, residencia, estado, id_residente) VALUES (?,?,?,?,?,'APROBADO',?)");
-    $stmt->execute([$nombre, $email, $password, $rol, $residencia, $idRes]);
+    $stmt->execute([$nombre, $email, $pass, $rol, $res, $idRes]);
     responder(true, ["id" => (int)$pdo->lastInsertId()]);
 }
 
-// ─── RESIDENCIAS ─────────────────────────────────────────────────────────────
+// --- residencias ---
 
 function listarResidencias($pdo) {
     $stmt = $pdo->query("SELECT nombre FROM residencias ORDER BY nombre");
@@ -153,18 +160,18 @@ function crearResidencia($pdo, $data) {
     responder(true, ["id" => (int)$pdo->lastInsertId()]);
 }
 
-// ─── RESIDENTES ──────────────────────────────────────────────────────────────
+// --- residentes ---
 
 function listarResidentes($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
-    $incluirInactivos = $data["incluir_inactivos"] ?? false;
+    $res = $data["residencia"] ?? "";
+    $inclInactivos = $data["incluir_inactivos"] ?? false;
 
     $sql = "SELECT * FROM residentes WHERE residencia = ?";
-    if (!$incluirInactivos) $sql .= " AND activo = 1";
+    if (!$inclInactivos) $sql .= " AND activo = 1";
     $sql .= " ORDER BY nombre";
 
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$residencia]);
+    $stmt->execute([$res]);
     responder(true, ["residentes" => $stmt->fetchAll(PDO::FETCH_ASSOC)]);
 }
 
@@ -178,10 +185,10 @@ function obtenerResidente($pdo, $data) {
 }
 
 function obtenerResidenteVinculado($pdo, $data) {
-    $usuarioId = $data["usuario_id"] ?? 0;
+    $uid = $data["usuario_id"] ?? 0;
 
     $stmt = $pdo->prepare("SELECT id_residente FROM usuarios WHERE id = ?");
-    $stmt->execute([$usuarioId]);
+    $stmt->execute([$uid]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$row || !$row["id_residente"]) {
@@ -196,37 +203,37 @@ function obtenerResidenteVinculado($pdo, $data) {
 }
 
 function guardarResidente($pdo, $data) {
-    $id         = $data["id"] ?? null;
-    $nombre     = $data["nombre"] ?? "";
-    $edad       = $data["edad"] ?? 0;
-    $habitacion = $data["habitacion"] ?? "";
-    $planta     = $data["planta"] ?? "";
-    $residencia = $data["residencia"] ?? "";
-    $fechaNac   = $data["fecha_nacimiento"] ?: null;
-    $fechaIng   = $data["fecha_ingreso"] ?: null;
-    $obs        = $data["observaciones"] ?? "";
-    $nec        = $data["necesidades"] ?? "";
+    $id      = $data["id"] ?? null;
+    $nombre  = $data["nombre"] ?? "";
+    $edad    = $data["edad"] ?? 0;
+    $hab     = $data["habitacion"] ?? "";
+    $planta  = $data["planta"] ?? "";
+    $res     = $data["residencia"] ?? "";
+    $fNac    = $data["fecha_nacimiento"] ?: null;
+    $fIng    = $data["fecha_ingreso"] ?: null;
+    $obs     = $data["observaciones"] ?? "";
+    $nec     = $data["necesidades"] ?? "";
 
     if ($id) {
         $stmt = $pdo->prepare("UPDATE residentes SET nombre=?, edad=?, habitacion=?, planta=?, fecha_nacimiento=?, fecha_ingreso=?, observaciones=?, necesidades=? WHERE id=?");
-        $stmt->execute([$nombre, $edad, $habitacion, $planta, $fechaNac, $fechaIng, $obs, $nec, $id]);
+        $stmt->execute([$nombre, $edad, $hab, $planta, $fNac, $fIng, $obs, $nec, $id]);
         responder(true, ["id" => (int)$id]);
     } else {
         $stmt = $pdo->prepare("INSERT INTO residentes (nombre, edad, habitacion, planta, residencia, fecha_nacimiento, fecha_ingreso, observaciones, necesidades) VALUES (?,?,?,?,?,?,?,?,?)");
-        $stmt->execute([$nombre, $edad, $habitacion, $planta, $residencia, $fechaNac, $fechaIng, $obs, $nec]);
+        $stmt->execute([$nombre, $edad, $hab, $planta, $res, $fNac, $fIng, $obs, $nec]);
         responder(true, ["id" => (int)$pdo->lastInsertId()]);
     }
 }
 
 function actualizarEstadoResidente($pdo, $data) {
-    $id    = $data["id"] ?? 0;
+    $id     = $data["id"] ?? 0;
     $activo = ($data["activo"] ?? false) ? 1 : 0;
     $stmt = $pdo->prepare("UPDATE residentes SET activo = ? WHERE id = ?");
     $stmt->execute([$activo, $id]);
     responder(true, []);
 }
 
-// ─── VISITAS ─────────────────────────────────────────────────────────────────
+// --- visitas ---
 
 function crearVisita($pdo, $data) {
     $idFam = $data["id_familiar"] ?? 0;
@@ -254,7 +261,7 @@ function listarVisitasFamiliar($pdo, $data) {
 }
 
 function listarVisitasPendientes($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
+    $res = $data["residencia"] ?? "";
     $stmt = $pdo->prepare("
         SELECT v.*, u.nombre AS nombre_familiar, r.nombre AS nombre_residente
         FROM visitas v
@@ -263,12 +270,12 @@ function listarVisitasPendientes($pdo, $data) {
         WHERE u.residencia = ? AND v.estado = 'PENDIENTE'
         ORDER BY v.fecha ASC, v.hora ASC
     ");
-    $stmt->execute([$residencia]);
+    $stmt->execute([$res]);
     responder(true, ["visitas" => $stmt->fetchAll(PDO::FETCH_ASSOC)]);
 }
 
 function listarVisitasResidencia($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
+    $res = $data["residencia"] ?? "";
     $stmt = $pdo->prepare("
         SELECT v.*, u.nombre AS nombre_familiar, r.nombre AS nombre_residente
         FROM visitas v
@@ -277,7 +284,7 @@ function listarVisitasResidencia($pdo, $data) {
         WHERE u.residencia = ?
         ORDER BY v.fecha DESC, v.hora DESC
     ");
-    $stmt->execute([$residencia]);
+    $stmt->execute([$res]);
     responder(true, ["visitas" => $stmt->fetchAll(PDO::FETCH_ASSOC)]);
 }
 
@@ -290,37 +297,37 @@ function actualizarEstadoVisita($pdo, $data) {
 }
 
 function listarHorasOcupadas($pdo, $data) {
-    $fecha      = $data["fecha"] ?? "";
-    $idResidente = $data["id_residente"] ?? 0;
+    $fecha   = $data["fecha"] ?? "";
+    $idRes   = $data["id_residente"] ?? 0;
 
     $stmt = $pdo->prepare("
         SELECT v.hora FROM visitas v
         JOIN usuarios u ON v.id_familiar = u.id
         WHERE u.id_residente = ? AND v.fecha = ? AND v.estado != 'RECHAZADA'
     ");
-    $stmt->execute([$idResidente, $fecha]);
+    $stmt->execute([$idRes, $fecha]);
     responder(true, ["horas" => $stmt->fetchAll(PDO::FETCH_COLUMN)]);
 }
 
-// ─── RESÚMENES ───────────────────────────────────────────────────────────────
+// --- resumenes para los dashboards ---
 
 function resumenPersonal($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
+    $res = $data["residencia"] ?? "";
     $hoy = date("Y-m-d");
 
     $s1 = $pdo->prepare("SELECT COUNT(*) FROM visitas v JOIN usuarios u ON v.id_familiar = u.id WHERE u.residencia = ? AND v.estado = 'PENDIENTE'");
-    $s1->execute([$residencia]);
+    $s1->execute([$res]);
 
     $s2 = $pdo->prepare("SELECT COUNT(*) FROM visitas v JOIN usuarios u ON v.id_familiar = u.id WHERE u.residencia = ? AND v.fecha = ? AND v.estado = 'APROBADA'");
-    $s2->execute([$residencia, $hoy]);
+    $s2->execute([$res, $hoy]);
 
     $s3 = $pdo->prepare("SELECT COUNT(*) FROM usuarios WHERE residencia = ? AND rol = 'FAMILIAR' AND estado = 'PENDIENTE'");
-    $s3->execute([$residencia]);
+    $s3->execute([$res]);
 
     responder(true, [
-        "citas_pendientes"     => (int)$s1->fetchColumn(),
-        "visitas_hoy"          => (int)$s2->fetchColumn(),
-        "familiares_pendientes"=> (int)$s3->fetchColumn()
+        "citas_pendientes"      => (int)$s1->fetchColumn(),
+        "visitas_hoy"           => (int)$s2->fetchColumn(),
+        "familiares_pendientes" => (int)$s3->fetchColumn()
     ]);
 }
 
@@ -330,20 +337,20 @@ function resumenAdmin($pdo) {
     $personalPend = (int)$pdo->query("SELECT COUNT(*) FROM usuarios WHERE rol = 'PERSONAL' AND estado = 'PENDIENTE'")->fetchColumn();
 
     responder(true, [
-        "total_residencias" => $totalRes,
-        "total_residentes"  => $totalResid,
-        "personal_pendiente"=> $personalPend
+        "total_residencias"  => $totalRes,
+        "total_residentes"   => $totalResid,
+        "personal_pendiente" => $personalPend
     ]);
 }
 
 function contarResidentesResidencia($pdo, $data) {
-    $residencia = $data["residencia"] ?? "";
+    $res = $data["residencia"] ?? "";
     $stmt = $pdo->prepare("SELECT COUNT(*) FROM residentes WHERE residencia = ? AND activo = 1");
-    $stmt->execute([$residencia]);
+    $stmt->execute([$res]);
     responder(true, ["total" => (int)$stmt->fetchColumn()]);
 }
 
-// ─── MENSAJERÍA ──────────────────────────────────────────────────────────────
+// --- mensajeria ---
 
 function insertarMensaje($pdo, $data) {
     $emisor   = $data["emisor"] ?? 0;
@@ -368,11 +375,11 @@ function listarMensajes($pdo, $data) {
         ORDER BY id ASC
     ");
     $stmt->execute([$id1, $id1, $id2, $id2, $id1]);
-    $mensajes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $msgs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($mensajes as &$m) {
+    foreach ($msgs as &$m) {
         $m["es_emisor"] = (bool)$m["es_emisor"];
     }
 
-    responder(true, ["mensajes" => $mensajes]);
+    responder(true, ["mensajes" => $msgs]);
 }

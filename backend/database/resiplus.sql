@@ -58,7 +58,6 @@ CREATE TABLE IF NOT EXISTS mensajes (
     FOREIGN KEY (receptor) REFERENCES usuarios(id)
 );
 
--- Datos de prueba para empezar
 INSERT IGNORE INTO residencias (nombre) VALUES
     ('Residencia Los Pinos'),
     ('Residencia El Olivar');

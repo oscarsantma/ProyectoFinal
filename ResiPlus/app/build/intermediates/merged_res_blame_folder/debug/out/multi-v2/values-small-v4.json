@@ -4,7 +4,7 @@
             "outputFile": "com.example.resiplus.app-mergeDebugResources-30:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\oscar santiago masso\\.gradle\\caches\\transforms-3\\f365540ee804ae47f505c3306333fcf9\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\OscarSa\\.gradle\\caches\\transforms-3\\f365540ee804ae47f505c3306333fcf9\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

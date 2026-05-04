@@ -18,21 +18,16 @@ class LoginActivity : BaseActivity() {
 
         val db = DatabaseHelper(this)
         val rol = intent.getStringExtra("ROL") ?: "FAMILIAR"
-        val header = findViewById<LinearLayout>(R.id.layoutHeader)
-        val badge = findViewById<TextView>(R.id.tvRolBadge)
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val tvRegistro = findViewById<TextView>(R.id.tvCrearCuenta)
-        val btnVolver = findViewById<TextView>(R.id.btnVolverLogin)
-        badge.text = rol
-        header.setBackgroundColor(getColor(R.color.verde_andalucia_primary))
-        btnLogin.setBackgroundResource(R.drawable.bg_boton_verde)
-        tvRegistro.visibility = if (rol == "ADMIN") View.GONE else View.VISIBLE
-        btnVolver.setOnClickListener {
+
+        findViewById<TextView>(R.id.tvRolBadge).text = rol
+        // el admin no puede registrarse, solo loguearse
+        findViewById<TextView>(R.id.tvCrearCuenta).visibility = if (rol == "ADMIN") View.GONE else View.VISIBLE
+        findViewById<TextView>(R.id.btnVolverLogin).setOnClickListener {
             startActivity(Intent(this, SeleccionRolActivity::class.java))
             finish()
         }
 
-        btnLogin.setOnClickListener {
+        findViewById<Button>(R.id.btnLogin).setOnClickListener {
             val email = findViewById<EditText>(R.id.etEmail).text.toString().trim()
             val pass = findViewById<EditText>(R.id.etPassword).text.toString().trim()
             if (email.isEmpty() || pass.isEmpty()) {
@@ -51,22 +46,18 @@ class LoginActivity : BaseActivity() {
                         return@runOnUiThread
                     }
                     if (u.estado != "APROBADO") {
-                        val msg = if (u.estado == "RECHAZADO") {
-                            "Tu registro fue rechazado. Habla con la residencia."
-                        } else {
-                            "Tu cuenta aun no ha sido aprobada por la residencia."
-                        }
+                        val msg = if (u.estado == "RECHAZADO") "Tu registro fue rechazado. Habla con la residencia."
+                                  else "Tu cuenta aun no ha sido aprobada por la residencia."
                         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
                         return@runOnUiThread
                     }
-                    getSharedPreferences("resiplus_prefs", MODE_PRIVATE).edit().apply {
-                        putInt("usuario_id", u.id)
-                        putString("usuario_nombre", u.nombre)
-                        putString("usuario_rol", u.rol)
-                        putString("usuario_residencia", u.residencia)
-                        putInt("usuario_residente_id", u.idResidente ?: -1)
-                        apply()
-                    }
+                    val prefs = getSharedPreferences("resiplus_prefs", MODE_PRIVATE).edit()
+                    prefs.putInt("usuario_id", u.id)
+                    prefs.putString("usuario_nombre", u.nombre)
+                    prefs.putString("usuario_rol", u.rol)
+                    prefs.putString("usuario_residencia", u.residencia)
+                    prefs.putInt("usuario_residente_id", u.idResidente ?: -1)
+                    prefs.apply()
                     val destino = when (rol) {
                         "FAMILIAR" -> DashboardFamiliarActivity::class.java
                         "ADMIN" -> DashboardAdminActivity::class.java
@@ -78,7 +69,7 @@ class LoginActivity : BaseActivity() {
             }.start()
         }
 
-        tvRegistro.setOnClickListener {
+        findViewById<TextView>(R.id.tvCrearCuenta).setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java).putExtra("ROL", rol))
         }
 

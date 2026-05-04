@@ -5,15 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+// para que no se tape el contenido con la barra de navegacion en android 15+
+// sin esto los botones de abajo quedaban ocultos en algunos moviles
 abstract class BaseActivity : AppCompatActivity() {
 
     override fun setContentView(layoutResID: Int) {
         super.setContentView(layoutResID)
-        val content: View = findViewById(android.R.id.content)
-        ViewCompat.setOnApplyWindowInsetsListener(content) { view, insets ->
-            val navBarHeight = insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
-            view.setPadding(0, 0, 0, navBarHeight)
-            insets
+        val root = findViewById<View>(android.R.id.content)
+        ViewCompat.setOnApplyWindowInsetsListener(root) { v, ins ->
+            val nav = ins.getInsets(WindowInsetsCompat.Type.navigationBars())
+            v.setPadding(0, 0, 0, nav.bottom)
+            ins
         }
     }
 }

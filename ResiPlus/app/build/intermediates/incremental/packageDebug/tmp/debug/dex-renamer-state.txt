@@ -1,9 +1,9 @@
-#Sun May 03 15:41:34 CEST 2026
-base.0=C\:\\Users\\oscar santiago masso\\Documents\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\oscar santiago masso\\Documents\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\oscar santiago masso\\Documents\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.3=C\:\\Users\\oscar santiago masso\\Documents\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.4=C\:\\Users\\oscar santiago masso\\Documents\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+#Mon May 04 11:42:28 CEST 2026
+base.0=C\:\\Users\\OscarSa\\Documents\\ProyectoFinal\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\OscarSa\\Documents\\ProyectoFinal\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\OscarSa\\Documents\\ProyectoFinal\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.3=C\:\\Users\\OscarSa\\Documents\\ProyectoFinal\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.4=C\:\\Users\\OscarSa\\Documents\\ProyectoFinal\\ProyectoFinal\\ResiPlus\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex
