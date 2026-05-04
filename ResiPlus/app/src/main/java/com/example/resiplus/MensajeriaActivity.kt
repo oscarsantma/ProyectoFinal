@@ -3,7 +3,7 @@ import android.os.Bundle; import android.view.LayoutInflater; import android.vie
 import android.widget.*; import androidx.appcompat.app.AppCompatActivity; import androidx.recyclerview.widget.LinearLayoutManager; import androidx.recyclerview.widget.RecyclerView
 import com.example.resiplus.database.DatabaseHelper; import com.example.resiplus.model.Mensaje
 import java.text.SimpleDateFormat; import java.util.*
-class MensajeriaActivity : AppCompatActivity() {
+class MensajeriaActivity : BaseActivity() {
     private lateinit var db: DatabaseHelper
     private lateinit var adapter: MensajeAdapter
     private val mensajes = mutableListOf<Mensaje>()

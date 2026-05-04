@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.resiplus.database.DatabaseHelper
 
-class AltaResidenteActivity : AppCompatActivity() {
+class AltaResidenteActivity : BaseActivity() {
     private var residenteId: Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {

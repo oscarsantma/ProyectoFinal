@@ -5,7 +5,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.resiplus.database.DatabaseHelper
 
-class PerfilResidenteActivity : AppCompatActivity() {
+class PerfilResidenteActivity : BaseActivity() {
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
         setContentView(R.layout.activity_perfil_residente)

@@ -14,7 +14,7 @@ import com.example.resiplus.database.DatabaseHelper
 import com.example.resiplus.model.Usuario
 import com.example.resiplus.model.Visita
 
-class GestionarSolicitudesActivity : AppCompatActivity() {
+class GestionarSolicitudesActivity : BaseActivity() {
     private lateinit var db: DatabaseHelper
     private lateinit var usuarioRol: String
     private lateinit var residencia: String

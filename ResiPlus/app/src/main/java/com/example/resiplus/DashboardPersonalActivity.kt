@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.resiplus.database.DatabaseHelper
 
-class DashboardPersonalActivity : AppCompatActivity() {
+class DashboardPersonalActivity : BaseActivity() {
     private lateinit var db: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {

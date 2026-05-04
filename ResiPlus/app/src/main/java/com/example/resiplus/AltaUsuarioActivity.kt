@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.resiplus.database.DatabaseHelper
 
-class AltaUsuarioActivity : AppCompatActivity() {
+class AltaUsuarioActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alta_usuario)

@@ -2,7 +2,7 @@ package com.example.resiplus
 import android.graphics.Color; import android.os.Bundle; import android.view.LayoutInflater; import android.view.View; import android.view.ViewGroup
 import android.widget.*; import androidx.appcompat.app.AppCompatActivity; import androidx.recyclerview.widget.LinearLayoutManager; import androidx.recyclerview.widget.RecyclerView
 import com.example.resiplus.database.DatabaseHelper; import com.example.resiplus.model.Visita
-class MisVisitasActivity : AppCompatActivity() {
+class MisVisitasActivity : BaseActivity() {
     override fun onCreate(s: Bundle?) {
         super.onCreate(s); setContentView(R.layout.activity_mis_visitas)
         val id = getSharedPreferences("resiplus_prefs",MODE_PRIVATE).getInt("usuario_id",-1)

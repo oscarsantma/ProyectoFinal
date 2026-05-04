@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.resiplus.database.DatabaseHelper
 import com.example.resiplus.model.Residente
 
-class ResidentesResidenciaActivity : AppCompatActivity() {
+class ResidentesResidenciaActivity : BaseActivity() {
     private lateinit var residencia: String
 
     override fun onCreate(savedInstanceState: Bundle?) {

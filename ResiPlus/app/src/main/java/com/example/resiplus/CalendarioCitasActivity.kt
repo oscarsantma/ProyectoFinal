@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.resiplus.database.DatabaseHelper
 import com.example.resiplus.model.Visita
 
-class CalendarioCitasActivity : AppCompatActivity() {
+class CalendarioCitasActivity : BaseActivity() {
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
         setContentView(R.layout.activity_calendario_citas)

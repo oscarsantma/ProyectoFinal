@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.resiplus.database.DatabaseHelper
 import com.example.resiplus.model.Residente
 
-class SolicitarVisitaActivity : AppCompatActivity() {
+class SolicitarVisitaActivity : BaseActivity() {
 
     private lateinit var db: DatabaseHelper
     private val horas = listOf("09:00", "10:00", "11:00", "12:00", "16:00", "17:00", "18:00", "19:00")

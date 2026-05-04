@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.resiplus.database.DatabaseHelper
 
-class GestionResidenciasActivity : AppCompatActivity() {
+class GestionResidenciasActivity : BaseActivity() {
     private lateinit var db: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {

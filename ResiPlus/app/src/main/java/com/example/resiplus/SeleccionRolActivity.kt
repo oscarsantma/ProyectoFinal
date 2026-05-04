@@ -1,7 +1,7 @@
 package com.example.resiplus
 import android.content.Intent; import android.os.Bundle; import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-class SeleccionRolActivity : AppCompatActivity() {
+class SeleccionRolActivity : BaseActivity() {
     override fun onCreate(s: Bundle?) {
         super.onCreate(s); setContentView(R.layout.activity_seleccion_rol)
         findViewById<LinearLayout>(R.id.cardFamiliar).setOnClickListener {
