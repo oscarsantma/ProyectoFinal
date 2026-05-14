@@ -1,5 +1,5 @@
 package com.example.resiplus
-
+//Esta libreia de iconos la meti al principio de la app por si lo necesitaba para algunas opciones pero por ahora estan sin uso
 data class SectionInfo(
     val title: String,
     val icon: String,

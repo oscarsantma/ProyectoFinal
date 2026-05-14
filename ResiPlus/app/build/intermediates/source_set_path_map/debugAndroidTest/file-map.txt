@@ -1,0 +1,4 @@
+com.example.resiplus.test.app-androidTest-0 C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\build\generated\res\resValues\androidTest\debug
+com.example.resiplus.test.app-mergeDebugAndroidTestResources-1 C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.resiplus.test.app-mergeDebugAndroidTestResources-2 C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.resiplus.test.app-merged_res-3 C:\Users\OscarSa\Documents\ProyectoFinal\ProyectoFinal\ResiPlus\app\build\intermediates\merged_res\debugAndroidTest

@@ -20,7 +20,7 @@ class LoginActivity : BaseActivity() {
         val rol = intent.getStringExtra("ROL") ?: "FAMILIAR"
 
         findViewById<TextView>(R.id.tvRolBadge).text = rol
-        // el admin no puede registrarse, solo loguearse
+        // el admin no puede registrarse, solo iniciar sesion
         findViewById<TextView>(R.id.tvCrearCuenta).visibility = if (rol == "ADMIN") View.GONE else View.VISIBLE
         findViewById<TextView>(R.id.btnVolverLogin).setOnClickListener {
             startActivity(Intent(this, SeleccionRolActivity::class.java))

@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicReference
 
 // clase que gestiona todas las llamadas a la api rest
-// uso POST con json para todo, el backend devuelve siempre {ok, data}
+// uso POST con json para todo el backend devuelve siempre ok, data
 class DatabaseHelper(context: Context) {
 
     private val apiUrl = BuildConfig.API_BASE_URL
@@ -203,8 +203,7 @@ class DatabaseHelper(context: Context) {
         return lista
     }
 
-    // peticion http sincrona a la api - bloquea el hilo hasta respuesta o timeout de 15s
-    // TODO: mejorar el manejo de errores de red
+    // peticion http a la api - bloquea el hilo hasta que responda
     private fun request(action: String, payload: JSONObject = JSONObject()): JSONObject? {
         val ref = AtomicReference<JSONObject?>()
         val latch = CountDownLatch(1)
@@ -234,7 +233,7 @@ class DatabaseHelper(context: Context) {
                 ref.set(if (envelope.optBoolean("ok")) envelope.optJSONObject("data") else null)
                 conn.disconnect()
             } catch (e: Exception) {
-                // fallo de red o el servidor no responde
+                // Por si falla la red o el servidor no responde
                 ref.set(null)
             } finally {
                 latch.countDown()
