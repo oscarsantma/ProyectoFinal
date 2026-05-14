@@ -5,10 +5,10 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
 // datos de conexion a la base de datos
-$host   = "fdb1031.runhosting.com";
+$host   = "db.hosts";
 $dbname = "4754766_resiplus";
 $dbuser = "4754766_resiplus";
-$dbpass = "oscarsantma2001";
+$dbpass = "mi contraseña";
 
 try {
     $pdo = new PDO("mysql:host=$host;port=3306;dbname=$dbname;charset=utf8", $dbuser, $dbpass);
